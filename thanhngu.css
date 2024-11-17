@@ -1,0 +1,121 @@
+body {
+    font-family: 'Noto Serif', serif; /* Font chữ cổ điển phù hợp với phong cách châu Á */
+    margin: 0;
+    padding: 0;
+    background-color: #f9f1dc; /* Màu nền nhạt, tạo cảm giác cổ điển */
+    color: #4B3832; /* Màu chữ tối */
+}
+
+.header {
+    background: linear-gradient(45deg, #d4af37, #f9c851); /* Màu vàng bóng gradient */
+    color: #4B3832; /* Màu chữ tối nổi bật trên nền vàng */
+    text-align: center;
+    padding: 1rem 0;
+    font-family: 'Noto Serif', serif;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Đổ bóng tạo chiều sâu */
+}
+
+.header nav a {
+    color: #4B3832;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.header nav a:hover {
+    color: #d4af37; /* Hiệu ứng hover đổi màu */
+    text-shadow: 0 0 5px #f9c851; /* Thêm hiệu ứng phát sáng nhẹ */
+}
+
+.banner {
+    background: url('https://toquoc.mediacdn.vn/280518851207290880/2023/4/6/z4243503877572939524c92dd23c64aa2dad17439fce21-1680787991928837009736.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 4rem 0;
+    max-height: 500px; /* Giới hạn chiều cao banner */
+    height: auto;
+    border-bottom: 5px solid #d4af37; /* Đường viền vàng bóng tạo sự tách biệt */
+}
+
+.products .product-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #fff5e0; /* Nền sáng gợi cảm giác sang trọng */
+    border-top: 5px solid #d4af37; /* Đường viền vàng bóng */
+    border-bottom: 5px solid #d4af37;
+    box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product {
+    border: 1px solid #d4af37; /* Viền vàng */
+    padding: 10px;
+    text-align: center;
+    width: 300px;
+    background-color: #fdf6e4; /* Nền sáng cổ điển */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* Góc bo nhẹ */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product:hover {
+    transform: scale(1.05); /* Phóng to nhẹ khi hover */
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2); /* Đổ bóng nổi bật */
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Làm bo góc */
+    border: 2px solid #d4af37; /* Thêm viền vàng cho ảnh */
+}
+
+.contact form input,
+.contact form textarea {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #d4af37;
+    background-color: #fdf6e4; /* Nền sáng */
+    border-radius: 5px;
+    font-family: 'Noto Serif', serif;
+}
+
+.contact form input:focus,
+.contact form textarea:focus {
+    outline: none;
+    border: 1px solid #f9c851; /* Đổi viền thành vàng sáng khi focus */
+    box-shadow: 0px 0px 8px #f9c851;
+}
+
+.contact form button {
+    background: linear-gradient(45deg, #d4af37, #f9c851); /* Nút vàng bóng */
+    color: #4B3832;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, transform 0.3s;
+}
+
+.contact form button:hover {
+    background: linear-gradient(45deg, #f9c851, #d4af37); /* Đổi hướng gradient khi hover */
+    transform: translateY(-3px); /* Hiệu ứng nút nhấn */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+.footer {
+    background: #4B3832; /* Màu nền tối cổ điển */
+    color: #fdf6e4; /* Màu chữ sáng */
+    text-align: center;
+    padding: 1rem 0;
+    font-family: 'Noto Serif', serif;
+    border-top: 5px solid #d4af37;
+}
